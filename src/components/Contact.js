@@ -140,7 +140,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="social-label">LinkedIn</div>
-                  <div className="social-value">Het Tejani</div>
+                  <div className="social-value">het-tejani-1a45a1240</div>
                 </div>
                 <ExternalLinkIcon className="social-arrow" />
               </a>

@@ -9,7 +9,7 @@ const PROJECTS = [
     title: 'Expense Manager',
     categories: ['Frontend', 'Web'],
     shortDescription: 'Tracking and managing personal or business expenses. Easily categorize, record, and visualize your spending to stay on top of your budget.',
-    technologies: ['React','JavaScript', 'Bootstarp', 'CSS', 'chart.js'],
+    technologies: ['React', 'JavaScript', 'Bootstrap', 'Chart.js', 'Local Storage'],
     repoUrl: 'https://github.com/het7tejani/Expense-manager',
     liveDemoUrl: 'https://expense-manager-orpin.vercel.app/',
     icon: 'wallet'
@@ -19,30 +19,50 @@ const PROJECTS = [
     title: 'UrbanPantry',
     categories: ['Full Stack', 'Web'],
     shortDescription: 'A modern home and kitchen essentials store offering stylish, functional, and high-quality products designed to elevate everyday living.',
-    technologies: ['React', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'Redux'],
+    technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Redux', 'JWT'],
     repoUrl: 'https://github.com/het7tejani/UrbanPantry',
-    liveDemoUrl: '#',
-    icon: 'shopping-bag'
+    liveDemoUrl: 'https://urbanpantry.netlify.app/',
+    icon: 'store'
   },
   {
     id: 3,
     title: 'Onclick Infotech',
     categories: ['Frontend', 'Web'],
     shortDescription: 'Custom software, web & mobile app solutions for digital growth.',
-    technologies: ['React','JavaScript','Next.js', 'Tailwind CSS'],
+    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
     repoUrl: 'https://github.com/het7tejani/onclick',
     liveDemoUrl: 'https://www.onclickinfotech.com/',
-    icon: 'globe'
+    icon: 'laptop-code'
   },
   {
     id: 4,
+    title: 'The Blog',
+    categories: ['Frontend', 'Web'],
+    shortDescription: 'The Blog is a conceptual blog application built to demonstrate the power of React, modern CSS in JS patterns, and efficient data fetching with Axios.',
+    technologies: ['React', 'Next.js', 'Axios', 'Styled Components'],
+    repoUrl: 'https://github.com/het7tejani/Blog',
+    liveDemoUrl: 'https://theblog99.vercel.app/',
+    icon: 'newspaper'
+  },
+  {
+    id: 5,
+    title: 'Recipe Finder',
+    categories: ['Frontend', 'Web'],
+    shortDescription: 'The Recipe Finder app is a modern, responsive web application built with React that allows users to search and discover recipes from a wide variety of cuisines.',
+    technologies: ['React', 'Next.js', 'Axios', 'CSS Modules'],
+    repoUrl: 'https://github.com/het7tejani/Recipe-Finder',
+    liveDemoUrl: 'https://recipe99.vercel.app/',
+    icon: 'utensils'
+  },
+  {
+    id: 6,
     title: 'Shreeji Masala',
     categories: ['Full Stack', 'Web'],
     shortDescription: 'Manage your spice inventory effortlessly with this Masala Dashboard. Track stock levels, daily consumption, supplier records, and profit.',
-    technologies: ['React', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
+    technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Recharts'],
     repoUrl: 'https://github.com/het7tejani/Shreeji',
     liveDemoUrl: 'https://shreejimasala.vercel.app/',
-    icon: 'clipboard-list'
+    icon: 'boxes-stacked'
   }
 ];
 

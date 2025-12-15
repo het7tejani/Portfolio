@@ -99,7 +99,7 @@ const PROJECTS = [
     ],
     repoUrl: "https://github.com/het7tejani/React-rbac",
     liveDemoUrl: "https://react-rbac99.vercel.app/",
-    icon: "Role",
+    icon: "bag-shopping",
   },
   {
     id: 5,

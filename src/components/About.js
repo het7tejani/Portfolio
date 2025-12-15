@@ -69,7 +69,7 @@ const About = ({ summaryParagraphs }) => {
                 className="about-buttons"
             >
                 <motion.a
-                    href="/resume.pdf" 
+                    href="/Het Tejani.pdf" 
                     download
                     className="btn btn-primary"
                     whileHover={{ scale: 1.05, y: -2 }}

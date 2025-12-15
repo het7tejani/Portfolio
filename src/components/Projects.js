@@ -84,6 +84,25 @@ const PROJECTS = [
   },
   {
     id: 4,
+    title: "Nykaa clone",
+    categories: ["Frontend", "Web"],
+    shortDescription:
+      "Implements role-based view switching to dynamically render distinct user interfaces for Customers, Sellers, and Admins on the same route, ensuring a personalized and secure user experience by adapting content, layouts, and available actions based on the authenticated user’s role.",
+    technologies: [
+      "React",
+      "JavaScript (ES6+)",
+      "React Router DOM",
+      "Context API",
+      "HTML5",
+      "CSS3",
+      "Create React App",
+    ],
+    repoUrl: "https://github.com/het7tejani/React-rbac",
+    liveDemoUrl: "https://react-rbac99.vercel.app/",
+    icon: "Role",
+  },
+  {
+    id: 5,
     title: "The Blog",
     categories: ["Frontend", "Web"],
     shortDescription:
@@ -107,7 +126,7 @@ const PROJECTS = [
     icon: "newspaper",
   },
   {
-    id: 5,
+    id: 6,
     title: "Recipe Finder",
     categories: ["Frontend", "Web"],
     shortDescription:
@@ -127,7 +146,7 @@ const PROJECTS = [
     icon: "utensils",
   },
   {
-    id: 6,
+    id: 7,
     title: "Quiz App",
     categories: ["Frontend", "Web"],
     shortDescription:
@@ -146,7 +165,7 @@ const PROJECTS = [
     icon: "brain",
   },
   {
-    id: 7,
+    id: 8,
     title: "Shreeji Masala",
     categories: ["Full Stack", "Web"],
     shortDescription:

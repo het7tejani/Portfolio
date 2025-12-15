@@ -52,7 +52,7 @@ const PROJECTS = [
   {
     id: 3,
     title: "Onclick Infotech",
-    categories: ["Frontend", "Web"],
+    categories: ["Full Stack", "Web"],
     shortDescription:
       "Custom software, web & mobile app solutions for digital growth.",
     technologies: [
@@ -75,7 +75,7 @@ const PROJECTS = [
       "Google Generative AI (GenAI)",
       "REST API",
       "CORS",
-      "Environment Variables (dotenv)",
+      "dotenv",
       "Nodemon",
     ],
     repoUrl: "https://github.com/het7tejani/onclick",
@@ -128,6 +128,25 @@ const PROJECTS = [
   },
   {
     id: 6,
+    title: "Quiz App",
+    categories: ["Frontend", "Web"],
+    shortDescription:
+      "A modern and interactive Quiz Application built using React that allows users to test their knowledge through questions. The app provides a smooth user experience with real-time score calculation, question navigation, and a final result summary.",
+    technologies: [
+      "React",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "React Scripts",
+      "Web Vitals",
+      "Jest DOM",
+    ],
+    repoUrl: "https://github.com/het7tejani/Quiz",
+    liveDemoUrl: "https://quiz99.vercel.app/",
+    icon: "brain",
+  },
+  {
+    id: 7,
     title: "Shreeji Masala",
     categories: ["Full Stack", "Web"],
     shortDescription:
@@ -155,16 +174,20 @@ const PROJECTS = [
 const ALL_CATEGORIES = ["All", "Full Stack", "Frontend", "Web"];
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 30, scale: 0.96 },
+  hidden: { opacity: 0, scale: 0.9 },
   visible: {
     opacity: 1,
-    y: 0,
     scale: 1,
-    transition: { delay: 0.05, duration: 0.25, ease: "easeOut" },
+    transition: { duration: 0.3, ease: "easeOut" },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.9,
+    transition: { duration: 0.2, ease: "easeIn" },
   },
 };
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project }) => {
   const [showAllTech, setShowAllTech] = useState(false);
   const visibleTechCount = 4;
   const visibleTech = project.technologies.slice(0, visibleTechCount);
@@ -175,8 +198,8 @@ const ProjectCard = ({ project, index }) => {
     <motion.div
       layout
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      animate="visible"
+      exit="exit"
       variants={cardVariants}
       className="project-card-new"
     >
@@ -321,13 +344,14 @@ const Projects = () => {
         <motion.div layout className="projects-list">
           <AnimatePresence mode="popLayout">
             {filteredProjects.length > 0 ? (
-              filteredProjects.map((project, index) => (
-                <ProjectCard key={project.id} project={project} index={index} />
+              filteredProjects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
               ))
             ) : (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 className="no-projects"
               >
                 No projects found for this category.

@@ -11,7 +11,7 @@ const SKILLS = [
   { name: 'JavaScript', slug: 'javascript', color: '#F7DF1E' },
   { name: 'TypeScript', slug: 'typescript', color: '#3178C6' },
   { name: 'HTML5', slug: 'html5', color: '#E34F26' },
-  { name: 'CSS3', slug: 'css3', color: '#1572B6' },
+  { name: 'CSS3', icon: 'css3-alt', iconClass: 'fab', color: '#1572B6' },
   { name: 'Tailwind', slug: 'tailwindcss', color: '#06B6D4' },
   { name: 'Bootstrap', slug: 'bootstrap', color: '#7952B3' },
   { name: 'Node.js', slug: 'nodedotjs', color: '#339933' },
@@ -22,10 +22,10 @@ const SKILLS = [
   { name: 'C++', slug: 'cplusplus', color: '#00599C' },
   { name: 'Git', slug: 'git', color: '#F05032' },
   { name: 'Docker', slug: 'docker', color: '#2496ED' },
-  { name: 'AWS', slug: 'amazonaws', color: '#FF9900' },
+  { name: 'AWS', icon: 'aws', iconClass: 'fab', color: '#FF9900' },
   { name: 'Chart.js', slug: 'chartdotjs', color: '#FF6384' },
   { name: 'React Hook Form', slug: 'reacthookform', color: '#EC5990' },
-  { name: 'React Spring', icon: 'bolt', color: '#FF6D6D' }, 
+  { name: 'React Spring', icon: 'bolt', iconClass: 'fas', color: '#FF6D6D' }, 
   { name: 'Framer Motion', slug: 'framer', color: '#0055FF' },
 ];
 
@@ -44,9 +44,11 @@ const SkillIcon = ({ skill, size = '48px' }) => {
         );
     }
 
+    const iconClass = skill.iconClass || 'fas';
+
     return (
         <i 
-            className={`fas fa-${skill.icon}`} 
+            className={`${iconClass} fa-${skill.icon}`} 
             style={{ color: skill.color, fontSize: size }}
         ></i>
     );

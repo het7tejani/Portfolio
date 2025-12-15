@@ -1,6 +1,6 @@
 
 :root {
-  --bg-color: #0B0F19;
+  --bg-color: #0F131F;
   --bg-secondary: #111827;
   --text-primary: #F3F4F6;
   --text-secondary: #9CA3AF;
@@ -92,7 +92,7 @@ ul {
   left: 0;
   width: 100%;
   height: var(--nav-height);
-  background: rgba(11, 15, 25, 0.8);
+  background: rgba(15, 19, 31, 0.8);
   backdrop-filter: blur(10px);
   z-index: 1000;
   display: flex;
@@ -145,7 +145,7 @@ ul {
   justify-content: center;
   text-align: center;
   padding: 80px 20px 40px; /* Top padding for navbar */
-  background-color: #0F131F; /* Slightly different dark bg for hero */
+  background-color: var(--bg-color);
   overflow: hidden;
 }
 
@@ -747,7 +747,7 @@ ul {
 /* Text & border on hover */
 .project-card-new:hover .live-btn {
   border-color: #ffffff;
-  color: #0B0F19;
+  color: #0F131F;
 }
 
 .project-card-new:hover .live-btn-shine {

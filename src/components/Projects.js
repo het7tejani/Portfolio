@@ -222,19 +222,16 @@ const ProjectCard = ({ project }) => {
       variants={cardVariants}
       className="project-card-new"
     >
-      {/* Visual Section */}
       <div className="project-visual">
         <div className="project-visual-inner">
           <i className={`fas fa-${project.icon} project-visual-icon`}></i>
         </div>
       </div>
 
-      {/* Content Section */}
       <div className="project-details">
         <h3 className="project-title-new">{project.title}</h3>
         <p className="project-description-new">{project.shortDescription}</p>
 
-        {/* Tech Stack */}
         <div className="project-tech-section">
           <div className="tech-label">
             <i className="fas fa-code"></i> <span>Tech Stack</span>
@@ -272,7 +269,6 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
 
-        {/* Actions */}
         <div className="project-actions">
           {project.repoUrl && (
             <motion.a
@@ -344,7 +340,6 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        {/* Filter */}
         <div className="projects-filter-container">
           {ALL_CATEGORIES.map((category) => (
             <button
@@ -359,7 +354,6 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Grid */}
         <motion.div layout className="projects-list">
           <AnimatePresence mode="popLayout">
             {filteredProjects.length > 0 ? (
